@@ -1,0 +1,9 @@
+form{
+    width: 50%;
+    margin-top: 10%;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}

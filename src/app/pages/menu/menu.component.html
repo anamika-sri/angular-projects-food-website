@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mt-5" *ngFor="let items of foodData;index  as i ">
+        <div class="foodbox " *ngIf="i<=4">
+                <img src="{{items.foodImg}}" alt="" >
+                <h1>{{items.foodName}}</h1>
+               
+                <p>{{items.foodDetails}}</p>
+                <p>{{items.foodPrice | currency: 'INR'}}</p>
+                <a routerLink=""  class="buybtn" [routerLink]="['/menu',items.id]">Buy Now <i class="bi bi-bag-heart-fill"></i></a>
+            </div>
+        
+        </div>
+    </div>
+</div>
